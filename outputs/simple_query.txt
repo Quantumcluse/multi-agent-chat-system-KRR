@@ -1,0 +1,48 @@
+================================================================================
+[2025-12-16 17:59:08] NEW USER QUERY: What are the main types of neural networks?
+================================================================================
+[2025-12-16 17:59:08] DECISION (Coordinator): Query complexity: simple
+  Reasoning: Based on keywords and structure analysis
+[2025-12-16 17:59:08] AGENT_CALL: Coordinator invokes MemoryAgent
+  Task: Search for relevant prior knowledge
+[2025-12-16 17:59:08] MESSAGE: Coordinator -> MemoryAgent | Type: retrieve
+  Payload: {'operation': 'search', 'query': 'What are the main types of neural networks?', 'search_type': 'hybrid', 'limit': 5}
+[2025-12-16 17:59:08] MEMORY: SEARCH
+  Details: Found 0 memories for query: 'What are the main types of neural networks?'
+[2025-12-16 17:59:08] AGENT_RESPONSE (MemoryAgent): Confidence=0.95
+  Summary: Memory operation: search - searched
+[2025-12-16 17:59:08] DECISION (Coordinator): Execution plan created: ResearchAgent
+  Reasoning: Plan includes 1 steps based on query requirements
+[2025-12-16 17:59:08] AGENT_CALL: Coordinator invokes ResearchAgent
+  Task: Retrieve information about neural networks
+[2025-12-16 17:59:08] MESSAGE: Coordinator -> ResearchAgent | Type: research
+  Payload: {'query': 'neural networks', 'task': 'Retrieve information about neural networks'}
+[2025-12-16 17:59:08] AGENT_RESPONSE (ResearchAgent): Confidence=0.95
+  Summary: Found 3 results for 'neural networks'
+[2025-12-16 17:59:08] MEMORY: STORE
+  Details: Stored conversation memory (ID: mem_0)
+[2025-12-16 17:59:08] MEMORY: STORE
+  Details: Stored knowledge memory (ID: mem_1)
+[2025-12-16 17:59:08] MEMORY: STORE
+  Details: Stored knowledge memory (ID: mem_2)
+[2025-12-16 17:59:08] MEMORY: STORE
+  Details: Stored knowledge memory (ID: mem_3)
+[2025-12-16 17:59:08] MEMORY: STORE_INTERACTION
+  Details: Stored interaction. Memory stats: {'conversation_count': 1, 'knowledge_topics': 3, 'total_knowledge': 3, 'agent_states': 0, 'vector_store_size': 4}
+
+[2025-12-16 17:59:08] FINAL RESPONSE:
+--------------------------------------------------------------------------------
+
+1. Neural Networks:
+   Neural networks are computing systems inspired by biological neural networks. They consist of interconnected nodes (neurons) organized in layers.
+   Main types include: Feedforward Neural Networks (FNN) for basic pattern recognition, Convolutional Neural Networks (CNN) for image processing, Recurrent Neural Networks (RNN) for sequential data, and Transformers for natural language processing.
+
+2. Convolutional Neural Networks:
+   CNNs are specialized neural networks designed for processing grid-like data such as images. They use convolutional layers to automatically learn spatial hierarchies of features.
+   Key components include convolutional layers, pooling layers, and fully connected layers. Trade-offs: excellent for image tasks but require large datasets and significant computational resources. Applications include image classification, object detection, and image segmentation.
+
+3. Recurrent Neural Networks:
+   RNNs are neural networks designed for sequential data by maintaining hidden states that capture information about previous inputs.
+   Variants include LSTM (Long Short-Term Memory) and GRU (Gated Recurrent Unit) which solve the vanishing gradient problem. Trade-offs: good for sequential data but slower to train than Transformers and can struggle with long-range dependencies.
+================================================================================
+
