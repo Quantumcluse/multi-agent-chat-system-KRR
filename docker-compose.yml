@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  multi-agent-system:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: multi-agent-chat-system:latest
+    container_name: multi-agent-system
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./outputs:/app/outputs
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python main.py
+
+  # Service to run test scenarios
+  test-scenarios:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: multi-agent-chat-system:latest
+    container_name: multi-agent-test-scenarios
+    volumes:
+      - ./outputs:/app/outputs
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python run_scenarios.py
