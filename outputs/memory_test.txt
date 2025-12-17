@@ -1,32 +1,32 @@
 ================================================================================
-[2025-12-16 17:59:08] NEW USER QUERY: What did we discuss about neural networks earlier?
+[2025-12-16 18:07:47] NEW USER QUERY: What did we discuss about neural networks earlier?
 ================================================================================
-[2025-12-16 17:59:08] DECISION (Coordinator): Query complexity: simple
+[2025-12-16 18:07:47] DECISION (Coordinator): Query complexity: simple
   Reasoning: Based on keywords and structure analysis
-[2025-12-16 17:59:08] AGENT_CALL: Coordinator invokes MemoryAgent
+[2025-12-16 18:07:47] AGENT_CALL: Coordinator invokes MemoryAgent
   Task: Search for relevant prior knowledge
-[2025-12-16 17:59:08] MESSAGE: Coordinator -> MemoryAgent | Type: retrieve
+[2025-12-16 18:07:47] MESSAGE: Coordinator -> MemoryAgent | Type: retrieve
   Payload: {'operation': 'search', 'query': 'What did we discuss about neural networks earlier?', 'search_type': 'hybrid', 'limit': 5}
-[2025-12-16 17:59:08] MEMORY: SEARCH
+[2025-12-16 18:07:47] MEMORY: SEARCH
   Details: Found 0 memories for query: 'What did we discuss about neural networks earlier?'
-[2025-12-16 17:59:08] AGENT_RESPONSE (MemoryAgent): Confidence=0.95
+[2025-12-16 18:07:47] AGENT_RESPONSE (MemoryAgent): Confidence=0.95
   Summary: Memory operation: search - searched
-[2025-12-16 17:59:08] DECISION (Coordinator): Execution plan created: MemoryAgent
+[2025-12-16 18:07:47] DECISION (Coordinator): Execution plan created: MemoryAgent
   Reasoning: Plan includes 1 steps based on query requirements
-[2025-12-16 17:59:08] AGENT_CALL: Coordinator invokes MemoryAgent
+[2025-12-16 18:07:47] AGENT_CALL: Coordinator invokes MemoryAgent
   Task: Query asks about previous conversation
-[2025-12-16 17:59:08] MESSAGE: Coordinator -> MemoryAgent | Type: retrieve
+[2025-12-16 18:07:47] MESSAGE: Coordinator -> MemoryAgent | Type: retrieve
   Payload: {'operation': 'retrieve', 'memory_type': 'conversation', 'limit': 10}
-[2025-12-16 17:59:08] MEMORY: RETRIEVE
+[2025-12-16 18:07:47] MEMORY: RETRIEVE
   Details: Retrieved 0 memories of type conversation
-[2025-12-16 17:59:08] AGENT_RESPONSE (MemoryAgent): Confidence=0.95
+[2025-12-16 18:07:47] AGENT_RESPONSE (MemoryAgent): Confidence=0.95
   Summary: Memory operation: retrieve - retrieved
-[2025-12-16 17:59:08] MEMORY: STORE
+[2025-12-16 18:07:47] MEMORY: STORE
   Details: Stored conversation memory (ID: mem_0)
-[2025-12-16 17:59:08] MEMORY: STORE_INTERACTION
+[2025-12-16 18:07:47] MEMORY: STORE_INTERACTION
   Details: Stored interaction. Memory stats: {'conversation_count': 1, 'knowledge_topics': 0, 'total_knowledge': 0, 'agent_states': 0, 'vector_store_size': 1}
 
-[2025-12-16 17:59:08] FINAL RESPONSE:
+[2025-12-16 18:07:47] FINAL RESPONSE:
 --------------------------------------------------------------------------------
 I don't have any relevant information from our previous conversations.
 ================================================================================

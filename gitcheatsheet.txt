@@ -1,0 +1,17 @@
+# See what changed
+git status
+
+# Add specific file
+git add filename.py
+
+# Add all changes
+git add .
+
+# Commit
+git commit -m "Description of what you did"
+
+# Push to GitHub
+git push
+
+# See commit history
+git log --oneline

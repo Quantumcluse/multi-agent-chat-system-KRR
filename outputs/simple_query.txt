@@ -1,36 +1,36 @@
 ================================================================================
-[2025-12-16 17:59:08] NEW USER QUERY: What are the main types of neural networks?
+[2025-12-16 18:07:47] NEW USER QUERY: What are the main types of neural networks?
 ================================================================================
-[2025-12-16 17:59:08] DECISION (Coordinator): Query complexity: simple
+[2025-12-16 18:07:47] DECISION (Coordinator): Query complexity: simple
   Reasoning: Based on keywords and structure analysis
-[2025-12-16 17:59:08] AGENT_CALL: Coordinator invokes MemoryAgent
+[2025-12-16 18:07:47] AGENT_CALL: Coordinator invokes MemoryAgent
   Task: Search for relevant prior knowledge
-[2025-12-16 17:59:08] MESSAGE: Coordinator -> MemoryAgent | Type: retrieve
+[2025-12-16 18:07:47] MESSAGE: Coordinator -> MemoryAgent | Type: retrieve
   Payload: {'operation': 'search', 'query': 'What are the main types of neural networks?', 'search_type': 'hybrid', 'limit': 5}
-[2025-12-16 17:59:08] MEMORY: SEARCH
+[2025-12-16 18:07:47] MEMORY: SEARCH
   Details: Found 0 memories for query: 'What are the main types of neural networks?'
-[2025-12-16 17:59:08] AGENT_RESPONSE (MemoryAgent): Confidence=0.95
+[2025-12-16 18:07:47] AGENT_RESPONSE (MemoryAgent): Confidence=0.95
   Summary: Memory operation: search - searched
-[2025-12-16 17:59:08] DECISION (Coordinator): Execution plan created: ResearchAgent
+[2025-12-16 18:07:47] DECISION (Coordinator): Execution plan created: ResearchAgent
   Reasoning: Plan includes 1 steps based on query requirements
-[2025-12-16 17:59:08] AGENT_CALL: Coordinator invokes ResearchAgent
+[2025-12-16 18:07:47] AGENT_CALL: Coordinator invokes ResearchAgent
   Task: Retrieve information about neural networks
-[2025-12-16 17:59:08] MESSAGE: Coordinator -> ResearchAgent | Type: research
+[2025-12-16 18:07:47] MESSAGE: Coordinator -> ResearchAgent | Type: research
   Payload: {'query': 'neural networks', 'task': 'Retrieve information about neural networks'}
-[2025-12-16 17:59:08] AGENT_RESPONSE (ResearchAgent): Confidence=0.95
+[2025-12-16 18:07:47] AGENT_RESPONSE (ResearchAgent): Confidence=0.95
   Summary: Found 3 results for 'neural networks'
-[2025-12-16 17:59:08] MEMORY: STORE
+[2025-12-16 18:07:47] MEMORY: STORE
   Details: Stored conversation memory (ID: mem_0)
-[2025-12-16 17:59:08] MEMORY: STORE
+[2025-12-16 18:07:47] MEMORY: STORE
   Details: Stored knowledge memory (ID: mem_1)
-[2025-12-16 17:59:08] MEMORY: STORE
+[2025-12-16 18:07:47] MEMORY: STORE
   Details: Stored knowledge memory (ID: mem_2)
-[2025-12-16 17:59:08] MEMORY: STORE
+[2025-12-16 18:07:47] MEMORY: STORE
   Details: Stored knowledge memory (ID: mem_3)
-[2025-12-16 17:59:08] MEMORY: STORE_INTERACTION
+[2025-12-16 18:07:47] MEMORY: STORE_INTERACTION
   Details: Stored interaction. Memory stats: {'conversation_count': 1, 'knowledge_topics': 3, 'total_knowledge': 3, 'agent_states': 0, 'vector_store_size': 4}
 
-[2025-12-16 17:59:08] FINAL RESPONSE:
+[2025-12-16 18:07:47] FINAL RESPONSE:
 --------------------------------------------------------------------------------
 
 1. Neural Networks:
